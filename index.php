@@ -186,10 +186,10 @@
 						}
 						?> 						
 						<div class="form-group">
-							<input class="form-control  py-2 px-4 mt-2 fs-4" type='text' name='name' pattern="[\S\s]*[a-zA-Zа-яёА-ЯЁ]+[\S\s]*" required title="Имя должно содержать символы помимо пробела" placeholder="Введите свое имя">
+							<input class="form-control  py-2 px-4 mt-2 fs-4" type='text' name='name' pattern="[\S\s]*[a-zA-Zа-яёА-ЯЁ]+[\S\s]*" required title="Имя должно содержать хотя бы 1 букву" placeholder="Введите свое имя">
 						</div>
 						<div class="form-group">
-							<input class="form-control  py-2 px-4 mt-4 fs-4" type='email' name='email' required placeholder="Введите адрес электронной почты" title="Введите email в формате ira@mail.com. Email может содержать только латинские буквы и цифры"pattern="[a-zA-Z0-9]+@[a-zA-Z0-9]+.[a-zA-Z0-9]+">
+							<input class="form-control  py-2 px-4 mt-4 fs-4" type='email' name='email' required placeholder="Введите адрес электронной почты" title="Введите email в формате ira@mail.com. Email может содержать только латинские буквы, цифры, точку, тире и подчеркивание"pattern="[a-zA-Z0-9\-_.]+@[a-zA-Z0-9]+[.][a-zA-Z0-9]+">
 						</div>
 						<div class="form-group">
 							<textarea class="form-control  py-2 px-4 mt-4 fs-4" id="exampleFormControlTextarea1" name="feedback" rows="3" required placeholder="Ваше сообщение" ></textarea>
