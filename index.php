@@ -162,46 +162,46 @@
 			<div class="bloc-3 align-items-center">
 				<img class="bg-img-2 col-12 col-xl-6 rounded-4" src="image-v5mm.png">
 				<div class="rounded-5 col-12 col-xl-6 py-4 feedback" >
-				<h1 class="py-4 text-center hh fw-bold" id="form">Связаться со мной</h1>
-				<div class="row">
-					
-					<form class="py-3 col-sm-10 offset-sm-1 text-center" autocomplete="off" action="email.php" id='feedback-form' method='post'>
-						<?php
-						if(!empty($_GET['message'])) {
-							$message = $_GET['message'];
+					<h1 class="py-4 text-center hh fw-bold" id="form">Связаться со мной</h1>
+					<div class="row">
+						
+						<form class="py-3 col-sm-10 offset-sm-1 text-center" autocomplete="off" action="email.php" id='feedback-form' method='post'>
+							<?php
+							if(!empty($_GET['message'])) {
+								$message = $_GET['message'];
 
-							if($message == 'Отправлено.')
-							{
-								echo '<div class="alert alert-success alert-link" role="alert">
-								'.$message.'
-								</div>';
+								if($message == 'Отправлено.')
+								{
+									echo '<div class="alert alert-success alert-link" role="alert">
+									'.$message.'
+									</div>';
+								}
+								else
+								{
+									echo '<div class="alert alert-danger alert-link" role="alert">
+									Ошибка при отправке формы.
+									</div>';
+
+								}
 							}
-							else
-							{
-								echo '<div class="alert alert-danger alert-link" role="alert">
-								Ошибка при отправке формы.
-								</div>';
+							?> 						
+							<div class="form-group">
+								<input class="form-control  py-2 px-4 mt-2 fs-4" type='text' name='name' pattern="[\S\s]*[a-zA-Zа-яёА-ЯЁ]+[\S\s]*" required title="Имя должно содержать хотя бы 1 букву" placeholder="Введите свое имя">
+							</div>
+							<div class="form-group">
+								<input class="form-control  py-2 px-4 mt-4 fs-4" type='email' name='email' required placeholder="Введите адрес электронной почты" title="Введите email в формате ira@mail.com. Email может содержать только латинские буквы, цифры, точку, тире и подчеркивание"pattern="[a-zA-Z0-9\-_.]+@[a-zA-Z0-9]+[.][a-zA-Z0-9]+">
+							</div>
+							<div class="form-group">
+								<textarea class="form-control  py-2 px-4 mt-4 fs-4" id="exampleFormControlTextarea1" name="feedback" rows="3" required placeholder="Ваше сообщение" ></textarea>
+							</div>
+							<input type="submit" class="btn btn-primary px-4 my-5  fw-bold fs-4"  id="submit" placeholder="Отправить">
 
-							}
-						}
-						?> 						
-						<div class="form-group">
-							<input class="form-control  py-2 px-4 mt-2 fs-4" type='text' name='name' pattern="[\S\s]*[a-zA-Zа-яёА-ЯЁ]+[\S\s]*" required title="Имя должно содержать хотя бы 1 букву" placeholder="Введите свое имя">
-						</div>
-						<div class="form-group">
-							<input class="form-control  py-2 px-4 mt-4 fs-4" type='email' name='email' required placeholder="Введите адрес электронной почты" title="Введите email в формате ira@mail.com. Email может содержать только латинские буквы, цифры, точку, тире и подчеркивание"pattern="[a-zA-Z0-9\-_.]+@[a-zA-Z0-9]+[.][a-zA-Z0-9]+">
-						</div>
-						<div class="form-group">
-							<textarea class="form-control  py-2 px-4 mt-4 fs-4" id="exampleFormControlTextarea1" name="feedback" rows="3" required placeholder="Ваше сообщение" ></textarea>
-						</div>
-						<input type="submit" class="btn btn-primary px-4 my-5  fw-bold fs-4"  id="submit" placeholder="Отправить">
+						</form>
 
-					</form>
+					</div>
+
 
 				</div>
-
-
-			</div>
 			</div>
 
 

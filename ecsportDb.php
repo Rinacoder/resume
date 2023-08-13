@@ -17,14 +17,14 @@ else{
 $fp = fopen('explores.csv', 'w');
 
 
-    fputcsv($fp,$headers);
+fputcsv($fp,$headers);
 
-    while ($row = $results->fetchArray(SQLITE3_ASSOC)) {
-    	
-        fputcsv($fp, $row, ";");
-    }
+while ($row = $results->fetchArray(SQLITE3_ASSOC)) {
+	
+	fputcsv($fp, $row, ";");
+}
 
-    fclose($fp);
+fclose($fp);
 
 
 
