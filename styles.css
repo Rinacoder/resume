@@ -1,0 +1,157 @@
+
+.btnExecute{
+  border-radius: 20px;
+}
+
+.btnExecute:hover {
+  background-color: #007BFF;
+  border-radius: 20px;
+}
+
+.bg-img{
+
+    height: 60%;
+    width: 60%;
+    display: none;
+}
+
+.bg-img-1{
+    height: 100%;
+    width: 100%;
+}
+
+}
+.bg-img-2{
+    height: 100%;
+    width: 100%;
+}
+
+
+.bloc-1{
+    justify-content: center;
+    text-align: center;
+    margin: 35px 0;
+}
+.bloc-3{
+    justify-content: center;
+    text-align: center;
+    margin: 35px 0;
+}
+.name{
+    font-weight: 700;
+    font-size: 34px;
+}
+
+.web{
+    font-weight: 700;
+    font-size: 30px;
+}
+.phone{
+    font-size: 24px;
+    font-weight: 500;
+}
+.mail{
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.btn-write{
+    font-size: 24px;
+}
+
+.feedback{
+    background: #14BEF3; 
+    padding: 20px;    
+    margin: 45px 0;
+}
+.h{
+    font-size: 32px;
+}
+.hh{
+    font-size: 32px;
+}
+.fields{
+    padding: 0 1vh;
+}
+@media screen and (min-width: 425px){
+    .fields{
+        padding: 0 10vh;
+    }
+
+}
+
+
+@media screen and (min-width: 768px){
+    .bg-img{
+        display: block;
+        margin-left: 20px;
+    }
+    .bg-img-1{
+        display: none;
+    }
+    .bloc-1{
+        display: flex;
+        justify-content: space-between;
+        text-align: left;
+    }
+    .name{
+        font-size: 40px
+    }
+    .h{
+        font-size: 50px
+    }
+    .hh{
+        font-size: 50px
+    }
+    .bloc-2{
+        padding: 20px;
+    }
+    .c-t{
+        font-size: 20px
+    }
+    .fields{
+        padding: 0 15vh;
+    }
+
+}
+@media screen and (min-width: 1200px){
+    .bg-img-2{
+        height: 40%;
+        width: 40%;
+        margin-right: : 20px;
+    }
+    .bloc-3{
+        display: flex;
+        justify-content: space-between;
+    }
+    .hh{
+        font-size: 40px
+    }
+}
+@media screen and (min-width: 1440px){
+    
+    .name{
+        font-size: 50px;
+    }
+    .web{
+        font-size: 42px;
+    }
+    .h{
+        font-size: 65px;
+    }
+    .h{
+        font-size: 55px;
+    }
+    .phone{
+        font-size: 30px;
+    }
+    .mail{
+        font-size: 28px;
+    }
+    .bloc-2{
+        padding: 30px 45px ;
+    } 
+    .feedback{
+        padding: 45px;
+    }
+}
